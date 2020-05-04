@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppliedMath;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,12 @@ namespace MathyMath
     {
         static void Main(string[] args)
         {
+            List<UInt32> factors = NumberTheory.Factors(12);
+            foreach(uint factor in factors)
+            {
+                Console.WriteLine(factor);
+            }
+            Console.ReadLine();
         }
     }
 }
